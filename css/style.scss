@@ -6,6 +6,7 @@ body {   /* background: #e99f9f;*/
         display: none;
     }
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .cart-window.display {
@@ -432,6 +433,7 @@ nav{
 
 @media only screen and (min-width: 1000px) {
 .container-nav {  
+    z-index: 1000;
     position: sticky;
     height: 4em;
     border-bottom: 1px solid lightgray;
@@ -443,6 +445,7 @@ nav{
         }
     }
     .secondary-nav {
+        z-index: 1000;
         .profile {
             height: 43px;
             width: 43px;
@@ -453,11 +456,13 @@ nav{
         }
     }
     nav {
+        height: 50px;
         position: absolute;
         display: inline-block;
         background: none;
         margin-left: 13em;
         top: -11px;
+        margin-bottom: 50px;
         .menu-exit-icon {
             display: none;
         }
@@ -487,9 +492,6 @@ nav{
         border-radius: 10px;
         margin-left: 5em;
         margin-right: 10em;
-    }
-    .slide-btn {
-        display: none;
     }
     .text {
         display: none;
